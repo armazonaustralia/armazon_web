@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ce81061.css",
+    "main.js": "/static/js/main.9e82bff9.js",
+    "static/js/453.4e89b249.chunk.js": "/static/js/453.4e89b249.chunk.js",
+    "static/media/logo_old.png": "/static/media/logo_old.f6b67d444602d82c4600.png",
+    "static/media/ai.jpeg": "/static/media/ai.da3bd925fd8ee38fa40d.jpeg",
+    "static/media/mobile.jpeg": "/static/media/mobile.98b78937b4bcf7cfd948.jpeg",
+    "static/media/digitalExperiences.png": "/static/media/digitalExperiences.379b0ae8135658b92ca6.png",
+    "static/media/web.jpeg": "/static/media/web.4076e9b512be752eda30.jpeg",
+    "static/media/consulting.jpeg": "/static/media/consulting.0eb460b6b4b78b7b5967.jpeg",
+    "static/media/ux-ui.jpeg": "/static/media/ux-ui.7f6f18f606bfb20f671e.jpeg",
+    "static/media/cloud.jpeg": "/static/media/cloud.0ce847b2cc74f575c046.jpeg",
+    "static/media/ashTowers.png": "/static/media/ashTowers.2474cc1c6d736e719eb2.png",
+    "static/media/logo.png": "/static/media/logo.2474cc1c6d736e719eb2.png",
+    "static/media/aboutUs.jpeg": "/static/media/aboutUs.ec46ce98e4eb3642f550.jpeg",
+    "static/media/diego.jpeg": "/static/media/diego.bc4576fc302757c686a3.jpeg",
+    "static/media/edu.jpeg": "/static/media/edu.64fd8a3083e002bcb1b5.jpeg",
+    "static/media/armazonHub.png": "/static/media/armazonHub.2c1bd438dc3a067ee496.png",
+    "static/media/nelson.jpeg": "/static/media/nelson.66b184ef1fc6f4f044f4.jpeg",
+    "static/media/TekSystems.png": "/static/media/TekSystems.3a5dd346f7ca85fb1345.png",
+    "static/media/fitideas.png": "/static/media/fitideas.110f6b4aafa81f0071f2.png",
+    "static/media/lahiru.jpeg": "/static/media/lahiru.14df3f5adc2d2b37fc0c.jpeg",
+    "static/media/tiana.jpeg": "/static/media/tiana.56172c91dbebd95c6780.jpeg",
+    "index.html": "/index.html",
+    "main.4ce81061.css.map": "/static/css/main.4ce81061.css.map",
+    "main.9e82bff9.js.map": "/static/js/main.9e82bff9.js.map",
+    "453.4e89b249.chunk.js.map": "/static/js/453.4e89b249.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ce81061.css",
+    "static/js/main.9e82bff9.js"
+  ]
+}
