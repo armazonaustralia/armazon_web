@@ -1,0 +1,36 @@
+/* src/index.css */
+
+/* You can keep the existing font-family rules from create-react-app if you like them,
+   or override them here or in App.css. The App.css already has an 'Inter' based stack. */
+
+body {
+  margin: 0;
+  /* font-family is already set in App.css, ensure consistency or remove one */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box; /* Apply box-sizing to all elements for easier layout */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* Inherit box-sizing from body */
+}
+
+/* Any other global resets or base styles can go here.
+   For example, a common reset for list styles: */
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Basic link styling can also be global if not handled by a more specific component/CSS file */
+/* a {
+  color: inherit;
+  text-decoration: none;
+} */
+
+/* Ensure images are responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes extra space below images */
+}

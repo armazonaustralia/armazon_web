@@ -1,0 +1,109 @@
+/* src/components/Services/Services.css */
+.visionMissionValues {
+  padding: 40px 20px; /* Vertical padding, horizontal padding for mobile */
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.services h2 {
+  font-size: 1.75em; /* 28px */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 20px; /* Gap between cards */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures the image corners are also rounded if image is direct child */
+  text-align: left;
+}
+
+.service-card.mobile {
+  /* Specific mobile styles for card if needed, otherwise defaults apply */
+  width: 100%; /* Full width on mobile */
+}
+
+.service-card-image {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area, cropping if necessary */
+}
+
+.service-card-content {
+  padding: 20px;
+}
+
+.service-card-content h3 {
+  font-size: 1.25em; /* 20px */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-card-content p {
+  font-size: 0.875em; /* 14px */
+  color: #555;
+  line-height: 1.6;
+}
+.service-video {
+  width: 100%;
+  max-height: 600px;
+  height: auto;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem; /* optional spacing */
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+
+  .services h2 {
+  text-align: center;
+  margin-bottom: 2rem; /* optional spacing */
+}
+
+  .services {
+    padding: 80px; /* Larger padding for desktop */
+  }
+
+  .services h2 {
+    font-size: 2.25em; /* 36px */
+  }
+
+  .services-grid {
+    /* Adjust grid for larger screens. Example: 2 columns for tablets, 3 for desktops */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 40px; /* Larger gap for desktop */
+  }
+
+  .service-card.desktop {
+    /* Max-width for cards on desktop to prevent them from becoming too wide */
+    /* The grid-template-columns with minmax should handle this well, but you can add max-width if needed */
+    /* max-width: 350px; */ /* Example: if you want to fix width */
+  }
+
+  .service-card-content h3 {
+    font-size: 1.5em; /* 24px */
+  }
+
+  .service-card-content p {
+    font-size: 1em; /* 16px */
+  }
+}

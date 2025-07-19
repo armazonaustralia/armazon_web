@@ -1,0 +1,90 @@
+/* src/components/AboutUs/AboutUs.css */
+.about-us {
+  padding: 40px 20px; /* Vertical padding, horizontal padding for mobile */
+  background-color: #f0f0f0; /* Light grey, similar to Flutter's Colors.grey[100] */
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column; /* Mobile: text above image */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* Center text on mobile */
+}
+
+.about-us-image-content {
+  flex: 1;
+  width: 100%; /* Ensure image container takes full width on mobile */
+  margin-bottom: 20px; /* Space between image and text on mobile */
+}
+
+.about-us-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional styling */
+  object-fit: contain; /* Was BoxFit.contain */
+}
+
+.about-us-text-content {
+  flex: 1;
+}
+
+.about-us-text-content h2 {
+  font-size: 1.75em; /* 28px */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-us-text-content p {
+  font-size: 1em; /* 16px */
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .about-us {
+    padding: 80px; /* Larger padding for desktop */
+  }
+
+  .about-us-content.desktop {
+    flex-direction: row; /* Desktop: image on left, text on right */
+    text-align: left; /* Align text to left on desktop */
+    align-items: flex-start;
+  }
+  .about-us-video {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about-us-image-content {
+    margin-bottom: 0; /* Remove bottom margin for desktop */
+    margin-right: 40px; /* Space between image and text */
+    max-width: 50%; /* Control image width relative to container */
+  }
+
+  .about-us-image-content.mobile-image {
+    display: none; /* Hide the mobile image block on desktop */
+  }
+
+  .about-us-text-content h2 {
+    font-size: 2.25em; /* 36px */
+  }
+
+  .about-us-text-content p {
+    font-size: 1.125em; /* 18px */
+  }
+}
+
+/* If the mobile image is shown below text, specific style for that */
+.about-us-content.mobile .about-us-image-content.mobile-image {
+  margin-top: 40px; /* Space above the image when it's below text on mobile */
+  margin-bottom: 0;
+}

@@ -1,0 +1,79 @@
+/* src/components/Client/Client.css */
+.client-section {
+  padding: 40px 20px; /* Mobile padding */
+  background-color: #f0f0f0; /* Light grey background */
+  text-align: center;
+}
+
+.client-section-title {
+  font-size: 1.5em; /* 24px for mobile */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.client-logos-slider {
+  overflow-x: auto; /* Allows horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  display: flex; /* Use flex to align items in a row before they wrap or scroll */
+  padding-bottom: 20px; /* Add some padding for the scrollbar if visible */
+  max-width: 100%; /* Ensure it doesn't overflow its container weirdly */
+}
+
+.client-logos-track {
+  display: flex; /* Align logos in a row */
+  gap: 40px; /* Spacing between logos */
+  align-items: center; /* Vertically align logos if they have different heights */
+  margin: 0 auto; /* Center the track if it's not wider than the container */
+}
+
+.client-logo-item {
+  /* Each item can have specific styling if needed, e.g., min-width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-logo-image {
+  height: 60px; /* Fixed height for logos on mobile */
+  max-width: 150px; /* Max width to prevent overly large logos */
+  object-fit: contain; /* Ensure entire logo is visible */
+}
+
+/* Hide scrollbar for a cleaner look - cross-browser */
+.client-logos-slider::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+.client-logos-slider {
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  scrollbar-width: none;  /* For Firefox */
+}
+
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .client-section {
+    padding: 80px; /* Desktop padding */
+  }
+
+  .client-section-title {
+    font-size: 2.25em; /* 36px for desktop */
+  }
+
+  .client-logos-slider {
+    /* On desktop, you might not want it to scroll if all items fit.
+       Or, you might implement arrows for navigation if it's a carousel.
+       This example keeps it scrollable if content overflows. */
+  }
+
+  .client-logos-track {
+    gap: 80px; /* Increased spacing for desktop */
+    /* If you want to ensure it's always centered and items are spaced out: */
+    justify-content: center;
+  }
+
+  .client-logo-image {
+    height: 80px; /* Larger logos for desktop */
+    max-width: 200px;
+  }
+}

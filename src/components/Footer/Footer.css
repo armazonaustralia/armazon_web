@@ -1,0 +1,24 @@
+/* src/components/Footer/Footer.css */
+.footer {
+  padding: 20px;
+  background-color: #e9ecef; /* Light grey, similar to Flutter's Colors.grey[200] */
+  text-align: center;
+  border-top: 1px solid #dee2e6; /* Subtle top border */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.875em; /* 14px */
+  color: #6c757d; /* Grey text color, similar to Colors.black54 */
+}
+
+/* No specific desktop styles needed if it's simple text,
+   but you can add them if layout changes significantly. */
+@media (min-width: 768px) {
+  .footer {
+    /* padding: 20px 80px; /* Example: if you want different padding on desktop */
+  }
+  .footer p {
+    /* font-size: 1em; /* Example: slightly larger text on desktop if desired */
+  }
+}
