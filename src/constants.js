@@ -7,6 +7,7 @@ export const SITE_ICON = 'armazonHub.ico'; // Example icon URL, replace with act
 export const HERO_TITLE = 'Residential and Commercial Scaffolding';
 export const HERO_DESCRIPTION =
   'we specialize in the supply, assembly, and disassembly of scaffolding for construction projects.';
+export const HERO_VIDEO = 'https://github.com/armazonaustralia/videos/raw/refs/heads/main/aboutUs-armazonHub.mp4'; 
 export const HERO_VIDEO_ENABLED = true; 
 export const ABOUT_US_TITLE = 'About Us';
 export const ABOUT_US_DESCRIPTION =
@@ -23,14 +24,14 @@ export const SERVICES_DATA = [
     description:
       'Safe dismantling, modifing, and adjusting scaffolding structures.',
     imageUrl: 'web.jpeg',
-    videoUrl: 'https://github.com/SPLAYER-HD/armazon_videos/raw/refs/heads/main/dismateling.mp4',
+    videoUrl: 'https://github.com/armazonaustralia/videos/raw/refs/heads/main/dismateling.mp4',
   },
   {
     title: 'Erecting',
     description:
       'Erecting scaffolding for residential and commercial projects.',
     imageUrl: 'mobile.jpeg',
-    videoUrl: 'https://github.com/SPLAYER-HD/armazon_videos/raw/refs/heads/main/erecting.mp4',
+    videoUrl: 'https://github.com/armazonaustralia/videos/raw/refs/heads/main/erecting.mp4',
   }
 ];
 

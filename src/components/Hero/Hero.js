@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import './Hero.css';
-import { HERO_TITLE, HERO_DESCRIPTION, CALL_TO_ACTION_TEXT, SECTION_IDS, HERO_VIDEO_ENABLED, COMPANY_KEY } from '../../constants';
+import { HERO_TITLE, HERO_DESCRIPTION, CALL_TO_ACTION_TEXT, SECTION_IDS, HERO_VIDEO_ENABLED, COMPANY_KEY, HERO_VIDEO } from '../../constants';
 import digitalExperiencesImg from '../../assets/digitalExperiences.png';
 
 
@@ -10,7 +10,7 @@ const Hero = ({ scrollToSection }) => {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
   const videoRef = React.useRef(null);
   // const videoSrc = videos[COMPANY_KEY] || heroAshTowersVideo; 
-  const videoSrc = 'https://github.com/SPLAYER-HD/armazon_videos/raw/refs/heads/main/aboutUs-armazonHub.mp4'; 
+  const videoSrc = HERO_VIDEO; 
   useEffect(() => {
       if (videoRef.current) {
         videoRef.current.playbackRate = 2;
